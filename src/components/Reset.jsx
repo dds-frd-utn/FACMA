@@ -22,7 +22,7 @@ const Reset = (props) => {
             await auth.sendPasswordResetEmail(email)
             props.history.push('/login')
         } catch (e) {
-            if (e.code == "auth/user-not-found"){
+            if (e.code === "auth/user-not-found"){
                 setError("El correo no corresponde a un usuario registrado")
             }
         }

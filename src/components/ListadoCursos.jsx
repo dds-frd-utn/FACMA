@@ -27,7 +27,7 @@ const ListadoCursos = () => {
                 <table className="table">
                     <thead>
                         <tr>
-                            <th>Foto</th>
+                            <th>Imagen</th>
                             <th>Nombre</th>
                             <th>Descripcion</th>
                             <th>Profesor a cargo</th>

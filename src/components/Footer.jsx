@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
     return (
@@ -25,16 +27,20 @@ const Footer = () => {
 
                             <ul className="list-unstyled">
                                 <li>
-                                    <a href="#!" className="text-light text-decoration-none">Empresa</a>
+                                    <Link className="text-light text-decoration-none" to="/sobre-nosotros">Sobre nosotros</Link>
                                 </li>
                                 <li>
-                                    <a href="#!" className="text-light text-decoration-none">Trabaja con nosotros</a>
+                                    <Link className="text-light text-decoration-none" to="/contacto">Contáctanos</Link>
                                 </li>
                                 <li>
-                                    <a href="#!" className="text-light text-decoration-none">Terminos de uso</a>
+                                    <Link className="text-light text-decoration-none" to="/trabaja-con-nosotros">Trabaja con nosotros</Link>
                                 </li>
                                 <li>
-                                    <a href="#!" className="text-light text-decoration-none">Contáctanos</a>
+                                    <Link className="text-light text-decoration-none" to="/preguntas-frecuentes">Preguntas frecuentes</Link>
+
+                                </li>
+                                <li>
+                                    <Link className="text-light text-decoration-none" to="/terminosycond">Términos y condiciones</Link>
                                 </li>
                             </ul>
 

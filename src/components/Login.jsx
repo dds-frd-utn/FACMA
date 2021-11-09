@@ -68,7 +68,8 @@ const Login = (props) => {
                 uid: res.user.uid,
                 displayName: '',
                 photoURL: 'https://firebasestorage.googleapis.com/v0/b/facma-cd9f2.appspot.com/o/1467646262_522853_1467646344_noticia_normal.jpg?alt=media&token=d0ec6fed-a39d-463d-8cba-35b6a711dc27',
-                formaPago: ''
+                formaPago: '',
+                cursos: ''
             })
             setEmail('');
             setPass('');

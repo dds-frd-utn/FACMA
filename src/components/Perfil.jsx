@@ -53,8 +53,8 @@ const Perfil = () => {
                     <h5 className="card-title mt-3">Nombre: <span className="fw-normal">{usuario.displayName}</span></h5>
                     <p className="card-text fw-bold">Email: <span className="fw-normal">{usuario.email}</span></p>
                     {
-                        formaPago ? <div><label className="fw-bold">Forma de pago:</label>
-                            <select name="Forma-pago" onChange={e => editarFormaPago(e.target.value)} value={formaPago}>
+                        formaPago ? <div><label className="fw-bold">Forma de pago: </label>
+                            <select name="Forma-pago" className="forma-pago-perfil form-select d-inline col-4" onChange={e => editarFormaPago(e.target.value)} value={formaPago}>
                                 <option value="0" disabled>--Seleccione un medio de pago--</option>
                                 <option value="Efectivo">Efectivo</option>
                                 <option value="Tarjeta debito/credito">Tarjeta debito/credito</option>

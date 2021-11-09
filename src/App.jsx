@@ -12,6 +12,12 @@ import Admin from './components/Admin';
 import ListadoProfesores from './components/ListadoProfesores';
 import ListadoCursos from './components/ListadoCursos';
 import Reset from './components/Reset';
+import TerminosyCond from './components/TerminosyCond';
+import Contacto from './components/Contacto';
+import TrabajaNosotros from './components/TrabajaNosotros';
+import SobreNosotros from './components/SobreNosotros';
+import Faqs from './components/Faqs';
+import Calendario from './components/Calendario';
 
 function App() {
 
@@ -52,6 +58,12 @@ const RutaPrivada = ({component, path,...rest}) =>{
           <RutaPrivada component={Cursos} path="/" exact />
           <RutaPrivada component={Admin} path="/admin"/>
           <RutaPrivada component={ListadoEstudiantes} path="/listadoAlumnos"/>
+          <RutaPrivada component={TerminosyCond} path="/terminosycond"/>
+          <RutaPrivada component={Contacto} path="/contacto"/> 
+          <RutaPrivada component={Calendario} path="/calendario"/> 
+          <RutaPrivada component={SobreNosotros} path="/sobre-nosotros"/>
+          <RutaPrivada component={Faqs} path="/preguntas-frecuentes"/>
+          <RutaPrivada component={TrabajaNosotros} path="/trabaja-con-nosotros"/>
           <RutaPrivada component={Reset} path="/reset"/>
           <RutaPrivada component={ListadoCursos} path="/listadoCursos" exact />
           <RutaPrivada component={ListadoProfesores} path="/listadoProfesores" exact />

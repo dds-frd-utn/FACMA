@@ -216,3 +216,32 @@ export const editarFormaPagoAction = (formaPagoNew) => async (dispatch, getState
         console.log(e)
     }
 }
+
+export const inscribirseAction = (cursoNew) => async (dispatch, getState) => {
+    dispatch({
+        type: LOADING
+    })
+    const { user } = getState().usuario
+
+    try {
+        console.log(user.cursos)
+        await db.collection('usuarios').doc(user.email).update({
+            cursos: cursoNew
+        })
+
+        const usuario = {
+            ...user,
+            cursos: cursoNew
+        }
+
+        dispatch({
+            type: USUARIO_EXITO,
+            payload: usuario
+        })
+
+        localStorage.setItem('usuario', JSON.stringify(usuario))
+
+    } catch (e) {
+        console.log(e)
+    }
+}

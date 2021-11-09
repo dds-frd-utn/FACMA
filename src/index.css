@@ -49,3 +49,11 @@ code {
   cursor: pointer;
   color:red;
 }
+
+.forma-pago-perfil{
+  width: 20%;
+}
+
+.curso-inscribir{
+  border-left: 1px solid rgb(211, 211, 211);
+}
