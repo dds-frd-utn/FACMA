@@ -24,12 +24,12 @@ const Cursos = () => {
     return (
         <>
             <div className="row">
-                <div className="col-4 mt-5">
+                <div className="col-md-4 mt-5">
                     <h1>Unite a nuestra gran comunidad de aprendizaje</h1>
                     <p>Clases online en vivo dictadas por expertos de la industria, enfoque 100% práctico, mentorías personalizadas y acceso a una comunidad de +15.000 estudiantes.</p>
                 </div>
-                <div className="col-8 text-center">
-                    <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/870D/production/_111437543_197389d9-800f-4763-8654-aa30c04220e4.png" alt="" />
+                <div className="col-md-8 text-center">
+                    <img className="img-fluid" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/870D/production/_111437543_197389d9-800f-4763-8654-aa30c04220e4.png" alt="" />
                 </div>
             </div>
             <hr/>

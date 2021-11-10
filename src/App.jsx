@@ -18,6 +18,7 @@ import TrabajaNosotros from './components/TrabajaNosotros';
 import SobreNosotros from './components/SobreNosotros';
 import Faqs from './components/Faqs';
 import Calendario from './components/Calendario';
+import Video from './components/Video';
 
 function App() {
 
@@ -61,6 +62,7 @@ const RutaPrivada = ({component, path,...rest}) =>{
           <RutaPrivada component={TerminosyCond} path="/terminosycond"/>
           <RutaPrivada component={Contacto} path="/contacto"/> 
           <RutaPrivada component={Calendario} path="/calendario"/> 
+          <RutaPrivada component={Video} path="/video"/> 
           <RutaPrivada component={SobreNosotros} path="/sobre-nosotros"/>
           <RutaPrivada component={Faqs} path="/preguntas-frecuentes"/>
           <RutaPrivada component={TrabajaNosotros} path="/trabaja-con-nosotros"/>

@@ -117,7 +117,7 @@ const Login = (props) => {
                             {
                                 !esRegistro &&
                                 (
-                                    <button className="btn text-primary float-end" type="button" onClick={() => props.history.push('/reset')}>
+                                    <button className="btn text-primary float-end" type="button" onClick={() => props.history.push('./reset')}>
                                         ¿Olvidaste tu contraseña?
                                     </button>
                                 )

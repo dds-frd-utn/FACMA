@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const TrabajaNosotros = () => {
     return (
         <div>
-            <h1 className="text-center">Envianos tu CV</h1>
+            <h1 className="text-center my-5">Envianos tu CV</h1>
             <div className="row">
                 <div className="col">
                     <form>
@@ -22,8 +22,8 @@ const TrabajaNosotros = () => {
                             <input type="number" class="form-control" required />
                         </div>
 
-                        <label className="form-label">Describe tus experiencias y conocimientos:</label>
-                        <textarea placeholder="Escriba el motivo de su consulta" className="form-control" rows="10"></textarea>
+                        <label className="form-label">Dejanos un mensaje:</label>
+                        <textarea placeholder="Describa sus experiencias y conocimientos" className="form-control" rows="10" required></textarea>
                         <div class="my-3">
                             <label for="formFile" class="form-label">Adjunta tu CV:</label>
                             <input class="form-control" type="file" id="formFile"/>

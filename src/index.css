@@ -19,7 +19,20 @@ code {
 
 .cursos{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(1,1fr);
+}
+
+@media (min-width: 796px){
+  .cursos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }  
+}
+
+@media (max-width: 520px ){
+  .menu-navbar{
+    display: block!important;
+  }  
 }
 
 .footer{
@@ -52,6 +65,11 @@ code {
 
 .forma-pago-perfil{
   width: 20%;
+}
+@media (max-width: 520px){
+  .forma-pago-perfil{
+    width: 10%;
+  }     
 }
 
 .curso-inscribir{

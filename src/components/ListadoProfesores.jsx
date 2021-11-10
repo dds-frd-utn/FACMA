@@ -21,8 +21,8 @@ const ListadoProfesores = () => {
 
     return (
         <div>
-            <h2 className="text-center mb-5">Listado de profesores</h2>
-            <div className="row lista-usuarios text-center">
+            <h2 className="text-center my-5">Listado de profesores</h2>
+            <div className="row lista-usuarios text-center table-responsive">
                 <table className="table">
                     <thead>
                         <tr>
@@ -61,7 +61,7 @@ const ListadoProfesores = () => {
                         ))
                     }
                 </table>
-
+                    <button className="btn text-primary float-end">+ Añadir nuevo</button>
             </div>
         </div>
     )

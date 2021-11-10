@@ -14,6 +14,8 @@ const DetalleCurso = () => {
     const [descripcion, setDescripcion] = React.useState('');
     const [profesor, setProfesor] = React.useState('');
     const [curso, setCurso] = React.useState('');
+    const [inscripto, setInscripto] = React.useState(false);
+    const [fav, setFav] = React.useState(false);
 
 
     const cursosRef = db.collection("cursos");
@@ -21,7 +23,8 @@ const DetalleCurso = () => {
     const query = cursosRef.where("nombre", "==", cursoName)
 
     const inscribir = (curso) => {
-        dispatch(inscribirseAction(curso))
+        dispatch(inscribirseAction(curso));
+        setInscripto(true);
     }
 
     query.get()
@@ -68,7 +71,23 @@ const DetalleCurso = () => {
                 <button className="btn btn-danger" onClick={() => inscribir(curso)}>Inscribirse</button>
                 <p></p>
 
-                <button className="btn btn btn-outline-danger">♥ Añadir a favoritos</button>
+                <button className="btn btn btn-outline-danger" onClick={() => setFav(true)}>♥ Añadir a favoritos</button>
+                {inscripto ?
+                    (<div class="alert alert-success mt-3" role="alert">
+                        Felicidades, te has inscripto al curso de {cursoName}
+                    </div>)
+
+                    :
+                    (<p></p>)
+                }
+                {fav ?
+                    (<div class="alert alert-danger mt-3" role="alert">
+                        Añadido a Favoritos!
+                    </div>)
+
+                    :
+                    (<p></p>)
+                }
             </div>
 
 

@@ -22,8 +22,8 @@ const ListadoEstudiantes = () => {
     return (
         <div>
             <h2 className="text-center mb-5">Listado de estudiantes</h2>
-            <div className="row lista-usuarios text-center">
-                <table className="table">
+            <div className="row lista-usuarios text-center table-responsive">
+                <table className="table table-hover">
                     <thead>
                         <tr>
                             <th>Foto</th>
