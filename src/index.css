@@ -31,7 +31,7 @@ code {
 
 @media (max-width: 520px ){
   .menu-navbar{
-    display: block!important;
+    display: none!important;
   }  
 }
 
@@ -74,4 +74,8 @@ code {
 
 .curso-inscribir{
   border-left: 1px solid rgb(211, 211, 211);
+}
+
+.css-hip9hq-MuiPaper-root-MuiAppBar-root{
+  background-color: black!important;
 }

@@ -12,6 +12,7 @@ const Login = (props) => {
     const [pass, setPass] = React.useState('');
     const [error, setError] = React.useState(null);
     const [esRegistro, setEsRegistro] = React.useState(true);
+    const [mensaje, setMensaje] = React.useState(false);
 
     const loading = useSelector(store => store.usuario.loading)
     const activo = useSelector(store => store.usuario.activo)
@@ -74,7 +75,8 @@ const Login = (props) => {
             setEmail('');
             setPass('');
             setError(null);
-            props.history.push('/admin')
+            props.history.push('/admin');
+            setMensaje('Bienvenido, ya puedes iniciar sesion!')
 
         } catch (e) {
             console.log(e);
@@ -132,6 +134,14 @@ const Login = (props) => {
                                     esRegistro ? '¿Ya estas registrado?' : '¿No tienes cuenta?'
                                 }
                             </button>
+                            {
+                                mensaje ? (
+                                    <p>{mensaje}</p>
+                                )
+                                : (
+                                    <p></p>
+                                )
+                            }
                         </form>
                     </div>
                 </div>
